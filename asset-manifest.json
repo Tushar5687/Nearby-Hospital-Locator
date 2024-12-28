@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Nearby-Hospital-Locator/static/css/main.4ba4d127.css",
+    "main.js": "/Nearby-Hospital-Locator/static/js/main.6582f8c3.js",
+    "static/js/488.5dc00adb.chunk.js": "/Nearby-Hospital-Locator/static/js/488.5dc00adb.chunk.js",
+    "index.html": "/Nearby-Hospital-Locator/index.html",
+    "main.4ba4d127.css.map": "/Nearby-Hospital-Locator/static/css/main.4ba4d127.css.map",
+    "main.6582f8c3.js.map": "/Nearby-Hospital-Locator/static/js/main.6582f8c3.js.map",
+    "488.5dc00adb.chunk.js.map": "/Nearby-Hospital-Locator/static/js/488.5dc00adb.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4ba4d127.css",
+    "static/js/main.6582f8c3.js"
+  ]
+}
