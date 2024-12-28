@@ -1,0 +1,225 @@
+/* Existing Styles */
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Style for the NavBar */
+.navbar {
+  background-color: #5f6FFF; /* Blue background */
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  box-shadow: 0 4px 2px -2px gray;
+  flex-wrap: wrap; /* Allow items to wrap if there isn't enough space */
+}
+
+.navbar-left h1 {
+  margin: 0;
+  font-size: 1.8em;
+  flex: 1 1 auto; /* Allow left part to take available space */
+}
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex: 1 1 auto; /* Allow right part to take available space */
+  gap: 10px;
+}
+
+.address-form {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap; /* Allow input and button to wrap in small screens */
+  max-width: 100%; /* Ensure it doesn't overflow */
+}
+
+.address-input {
+  padding: 10px;
+  font-size: 1em;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  width: 200px; /* Adjust width of input to fit in smaller screens */
+  min-width: 150px; /* Set a minimum width */
+  margin-right: 10px;
+}
+
+.find-btn {
+  padding: 10px;
+  background-color: #ff6600;
+  color: white;
+  font-size: 1em;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  white-space: nowrap; /* Prevent text from wrapping in button */
+  margin-right: 70px;
+}
+
+.find-btn:hover {
+  background-color: #e65c00;
+}
+
+/* Add style for the new "Get Current Location" button */
+.get-location-btn {
+  padding: 10px;
+  background-color: #28a745; /* Green background */
+  color: white;
+  font-size: 1em;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  white-space: nowrap; /* Prevent text from wrapping in button */
+  margin-right: 40px;
+}
+
+.get-location-btn:hover {
+  background-color: #218838; /* Slightly darker shade on hover */
+}
+
+/* Adjust map container to make space for the fixed navbar */
+.MapContainer {
+  margin-top: 90px; /* Adjust for navbar height */
+  gap: 100px;
+}
+
+.hospital-list {
+  margin-top: 30px;
+}
+
+.hospital-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.hospital-card {
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+.hospital-card h4 {
+  margin: 0;
+  font-size: 1.2em;
+}
+
+.hospital-card p {
+  margin: 5px 0;
+}
+
+/* Book Appointment Button Style */
+.book-appointment-btn {
+  padding: 10px 15px;
+  background-color: #5f6fff; /* Stylish Blue */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px; /* Add spacing between other content */
+}
+
+.book-appointment-btn:hover {
+  background-color: #4e5de6; /* Slightly darker shade on hover */
+}
+.map-container {
+  margin-top: 20px; /* This creates space between the navbar and map */
+}
+
+.map-container .leaflet-container {
+  margin-top: 20px; /* You can adjust this value to change the space between navbar and map */
+}
+/* Add these styles in App.css */
+
+/* Ensure the map is responsive */
+.map-container {
+  height: 100%;
+  width: 100%;
+}
+
+/* Make the layout responsive for mobile screens */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar-left h1 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+  .navbar-right {
+    width: 100%;
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .address-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .address-input,
+  .find-btn,
+  .get-location-btn {
+    width: 100%;
+    margin: 10px 0;
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hospital-card {
+    width: 100%;
+  }
+
+  .map-container {
+    height: 50vh; /* Reduce map size on small screens */
+  }
+}
