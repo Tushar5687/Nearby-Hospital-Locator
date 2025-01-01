@@ -30,13 +30,13 @@ Leaflet: JavaScript library for interactive maps.
 Geoapify Places API:
 Used to fetch nearby hospitals within a given radius.
 
-## License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
-
-
 OpenCage Geocoding API:
 Used to convert addresses into geographical coordinates.
 
 OpenStreetMap Nominatim API:
 For reverse geocoding to fetch hospital addresses from coordinates.
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
