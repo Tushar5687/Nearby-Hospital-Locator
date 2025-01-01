@@ -20,6 +20,7 @@ Lists hospitals in a card-based format with their details.
 Option to "Book Appointment" for each hospital.
 
 **Technologies Used**
+
 **Frontend:**
 React: Framework for building the application UI.
 React-Leaflet: For integrating OpenStreetMap with React.
