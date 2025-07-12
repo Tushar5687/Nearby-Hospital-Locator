@@ -1,39 +1,85 @@
-# Nearby-Hospital-Locator
-The Nearby Hospital Locator is a web application designed to help users locate hospitals near their current location or a specified address. The app uses geolocation, mapping APIs, and reverse geocoding to display nearby hospitals with their distances and addresses on an interactive map. It also provides an option to book an appointment at a selected hospital.
+# MediMap 🏥📍
 
-**Features**
+MediMap is a React-based web application that helps users discover **nearby hospitals** based on their current location or a manually entered address. It utilizes **OpenStreetMap Nominatim API** and browser **Geolocation API** to fetch and sort hospitals by distance using the **Haversine formula**.
 
-Search by Current Location:
-Uses the browser's geolocation API to fetch the user's current location.
-Displays hospitals within a 5 km radius.
+## 🌐 Live Demo
+🔗 [Visit Live App](https://tushar5687.github.io/MediMap/)
 
-Search by Address:
-Allows users to enter an address manually to find nearby hospitals.
-Uses OpenCage API for geocoding.
+---
 
-Interactive Map:
-Displays the user's location and nearby hospitals on an OpenStreetMap-powered map.
-Shows details such as hospital name, distance, and address when markers are clicked.
+## 🚀 Features
 
-Hospital Details:
-Lists hospitals in a card-based format with their details.
-Option to "Book Appointment" for each hospital.
+- 🔍 **Search Hospitals** by:
+  - 📍 Current Location (Geolocation)
+  - 🗺️ Custom Location Input (via Nominatim API)
+- 📏 **Distance Calculation** (using latitude/longitude Haversine formula)
+- 🧾 Display hospital:
+  - Name
+  - Address
+  - Distance (in km)
+  - "Book Appointment" button (UI only)
+- 🧭 Clean card-based UI using **Tailwind CSS**
+- 🔃 Loading spinner while fetching data
 
-**Technologies Used**
+---
 
-**Frontend:**
-React: Framework for building the application UI.
-React-Leaflet: For integrating OpenStreetMap with React.
-Leaflet: JavaScript library for interactive maps.
+## 🛠️ Tech Stack
 
-**APIs:**
-Geoapify Places API:
-Used to fetch nearby hospitals within a given radius.
+- **React** – SPA with component-based architecture
+- **Tailwind CSS** – Styling and layout
+- **OpenStreetMap (Nominatim API)** – Hospital and location data
+- **Geolocation API** – Get user's live location
+- **Custom Utilities** – Distance calculation via Haversine formula
 
-OpenCage Geocoding API:
-Used to convert addresses into geographical coordinates.
+---
 
-OpenStreetMap Nominatim API:
-For reverse geocoding to fetch hospital addresses from coordinates.
+## 📁 Project Structure
+
+```bash
+MediMap/
+├── public/
+│   ├── favicon.ico
+│   ├── index.html
+│   ├── logo192.png
+│   ├── logo512.png
+│   ├── manifest.json
+│   └── robots.txt
+│
+├── src/
+│   ├── components/
+│   │   ├── LoadingSpinner.js
+│   │   └── LoadingSpinner.css
+│   │
+│   ├── App.js
+│   ├── App.css
+│   ├── App.test.js
+│   ├── index.js
+│   ├── index.css
+│   ├── logo.svg
+│   └── reportWebVitals.js
+│
+├── .gitignore
+├── LICENSE
+├── README.md
+├── package.json
+└── package-lock.json
+ 
+---
+
+## ⚙️ Setup Instructions
+
+```bash
+# 1. Clone the repository
+git clone https://github.com/Tushar5687/MediMap.git
+cd MediMap
+
+# 2. Install dependencies
+npm install
+
+# 3. Run the app locally
+npm start
+
+
+
 
 
