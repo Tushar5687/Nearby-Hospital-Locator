@@ -3,7 +3,7 @@
 MediMap is a React-based web application that helps users discover **nearby hospitals** based on their current location or a manually entered address. It utilizes **OpenStreetMap Nominatim API** and browser **Geolocation API** to fetch and sort hospitals by distance using the **Haversine formula**.
 
 ## 🌐 Live Demo
-🔗 [Visit Live App](https://tushar5687.github.io/MediMap/)
+🔗 [Visit Live App](https://tushar5687.github.io/Nearby-Hospital-Locator/)
 
 ---
 
